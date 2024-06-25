@@ -1,16 +1,20 @@
-// firePosition will be the position in which the gun will fire.
-let firePosition = 1;
+let firePosition = 1; //Definimos la posición de la bala en una variable.
 
-// The output of spinChamber will be a number and it can be passed as a parameter to the fireGun function.
-const spinChamber = () => {
-    let chamberPosition = Math.floor((Math.random() * 6) + 1);
-    return chamberPosition;
+
+const spinChamber = () => { //Definimos una función flecha sin parámetros.
+    let chamberPosition = Math.floor((Math.random() * 6) + 1); //Generamos un número entero entre 1 y 6.
+    return chamberPosition; //Retornamos el resultado de "chamberPosition".
 };
 
-// Remove the // below and complete the commented lines
-const fireGun = (bulletPosition) => {
-    // if (... === firePosition) return ("You're dead!");
-    // else return ("Keep playing!");
-};
 
-console.log(fireGun(spinChamber()));
+const fireGun = (bulletPosition) => { //Definimos una función flecha con un parámetro sin valor.
+    if(bulletPosition === firePosition){ //Comparamos "bulletPosition" con "firePosition" (posición de la bala).
+        return (`You're dead!`); //Retornamos un mensaje si la condición se cumple.
+    }else{ //Y sino se cumple retornamos otro mensaje.
+        return (`Keep playing!`);
+    }
+
+};
+let result = fireGun(spinChamber); //Llamamos a la función "fireGun" con "spinChamber" como valor(se ejecuta primero esta función).
+
+console.log(fireGun(spinChamber())); //Imprimos el resultado de la operación.

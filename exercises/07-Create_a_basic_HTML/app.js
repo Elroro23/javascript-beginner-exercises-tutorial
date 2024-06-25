@@ -1,4 +1,5 @@
-const a = '</title>';
+//Declaramos constantes con "string" como valores.
+const a = '</title>'; 
 const b = '</html>';
 const c = '<head>';
 const d = '</body>';
@@ -7,7 +8,7 @@ const f = '</head>';
 const g = '<title>';
 const h = '<body>';
 
-//Modify this variable
-let htmlDocument = 'e+c+g+h+d+a+f+b';
+//Concatenamos las constantes en el orden correcto.
+let htmlDocument = e+c+g+a+f+h+d+b; //Si dejamos las "" lo tomará como un string.
 
-console.log(htmlDocument);
+console.log(htmlDocument); //Llamamos a la variable y la imprimimos.

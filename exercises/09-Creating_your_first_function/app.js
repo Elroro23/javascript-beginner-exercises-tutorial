@@ -1,7 +1,7 @@
-function addNumbers(a,b){
-	// This is the function's body. Write your code here.
-	
+function addNumbers(a, b) { // Declaramos una función con dos parámetros.
+	let sum = (a + b); //Especificamos la operación y la guardamos en la variable "sum"
+	return sum; //Retornamos el resultado.
 }
 
-//Do not change the code below
-console.log(addNumbers(3,4));
+
+console.log(addNumbers(3, 4));//Llamamos a la función con los argumentos e imprimos.
